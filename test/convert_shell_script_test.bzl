@@ -209,9 +209,9 @@ def _symlink_to_dir(source, target):
 mkdir -p ${target}
 
 if [[ -d $1 ]]; then
-  ln -s -t ${target} $1
+  ln -sf -t ${target} $1
 elif [[ -f $1 ]]; then
-  ln -s -t ${target} $1
+  ln -sf -t ${target} $1
 elif [[ -L $1 ]]; then
   cp --no-target-directory $1 ${target}
 else
@@ -242,9 +242,9 @@ function symlink_to_dir() {
 mkdir -p ${target}
 
 if [[ -d $1 ]]; then
-  ln -s -t ${target} $1
+  ln -sf -t ${target} $1
 elif [[ -f $1 ]]; then
-  ln -s -t ${target} $1
+  ln -sf -t ${target} $1
 elif [[ -L $1 ]]; then
   cp --no-target-directory $1 ${target}
 else
