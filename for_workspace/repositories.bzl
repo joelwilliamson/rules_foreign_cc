@@ -28,6 +28,7 @@ def repositories():
         name = "cmake",
         build_file_content = _all_content,
         strip_prefix = "CMake-3.12.1",
+        sha256 = "019aa2afdf650d27bd70407e0a8183ce2f3fce0429e82d1ced234aed942c9a0b",
         urls = [
             "https://github.com/Kitware/CMake/archive/v3.12.1.tar.gz",
         ],
